@@ -57,7 +57,7 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\3rdParty\OpenCV3.1\openCV3.1.props" />
+    <Import Project="..\..\3rdParty\OpenCV3.1\openCV3.1_d.props" />
     <Import Project="..\..\3rdParty\dlib\dlib.props" />
     <Import Project="..\..\3rdParty\tbb\tbb_d.props" />
   </ImportGroup>
@@ -69,7 +69,7 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\3rdParty\OpenCV3.1\openCV3.1.props" />
+    <Import Project="..\..\3rdParty\OpenCV3.1\openCV3.1_d.props" />
     <Import Project="..\..\3rdParty\dlib\dlib.props" />
     <Import Project="..\..\3rdParty\tbb\tbb_d.props" />
   </ImportGroup>

@@ -58,7 +58,7 @@
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\lib\3rdParty\dlib\dlib.props" />
-    <Import Project="..\..\lib\3rdParty\OpenCV3.1\openCV3.1.props" />
+    <Import Project="..\..\lib\3rdParty\OpenCV3.1\openCV3.1_d.props" />
     <Import Project="..\..\lib\3rdParty\boost\boost_d.props" />
     <Import Project="..\..\lib\3rdParty\tbb\tbb_d.props" />
     <Import Project="..\..\lib\3rdParty\OpenBLAS\OpenBLAS.props" />
@@ -66,7 +66,7 @@
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\lib\3rdParty\dlib\dlib.props" />
-    <Import Project="..\..\lib\3rdParty\OpenCV3.1\openCV3.1.props" />
+    <Import Project="..\..\lib\3rdParty\OpenCV3.1\openCV3.1_d.props" />
     <Import Project="..\..\lib\3rdParty\boost\boost_d.props" />
     <Import Project="..\..\lib\3rdParty\tbb\tbb_d.props" />
     <Import Project="..\..\lib\3rdParty\OpenBLAS\OpenBLAS.props" />
@@ -119,6 +119,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

@@ -80,8 +80,7 @@ vector<string> get_arguments(int argc, char **argv)
 }
 
 int main (int argc, char **argv)
-{
-		
+{	
 	//Convert arguments to more convenient vector form
 	vector<string> arguments = get_arguments(argc, argv);
 
@@ -218,6 +217,7 @@ int main (int argc, char **argv)
 
 	}
 	
+    getchar();
 	return 0;
 }
 
